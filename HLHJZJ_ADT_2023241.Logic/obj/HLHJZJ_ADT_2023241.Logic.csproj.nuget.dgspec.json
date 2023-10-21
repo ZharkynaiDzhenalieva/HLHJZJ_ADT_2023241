@@ -25,6 +25,66 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Models/HLHJZJ_ADT_2023241.Models.csproj": {
+                "projectPath": "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Models/HLHJZJ_ADT_2023241.Models.csproj"
+              },
+              "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Repository/HLHJZJ_ADT_2023241.Repository.csproj": {
+                "projectPath": "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Repository/HLHJZJ_ADT_2023241.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Models/HLHJZJ_ADT_2023241.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Models/HLHJZJ_ADT_2023241.Models.csproj",
+        "projectName": "HLHJZJ_ADT_2023241.Models",
+        "projectPath": "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Models/HLHJZJ_ADT_2023241.Models.csproj",
+        "packagesPath": "/Users/jaka/.nuget/packages/",
+        "outputPath": "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Models/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jaka/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -53,7 +113,64 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Repository/HLHJZJ_ADT_2023241.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Repository/HLHJZJ_ADT_2023241.Repository.csproj",
+        "projectName": "HLHJZJ_ADT_2023241.Repository",
+        "projectPath": "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Repository/HLHJZJ_ADT_2023241.Repository.csproj",
+        "packagesPath": "/Users/jaka/.nuget/packages/",
+        "outputPath": "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Repository/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jaka/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Models/HLHJZJ_ADT_2023241.Models.csproj": {
+                "projectPath": "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Models/HLHJZJ_ADT_2023241.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
         }
       }
     }

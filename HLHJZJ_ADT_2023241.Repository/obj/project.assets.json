@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "HLHJZJ_ADT_2023241.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/HLHJZJ_ADT_2023241.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HLHJZJ_ADT_2023241.Models.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "HLHJZJ_ADT_2023241.Models/1.0.0": {
+      "type": "project",
+      "path": "../HLHJZJ_ADT_2023241.Models/HLHJZJ_ADT_2023241.Models.csproj",
+      "msbuildProject": "../HLHJZJ_ADT_2023241.Models/HLHJZJ_ADT_2023241.Models.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "HLHJZJ_ADT_2023241.Models >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/jaka/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Models/HLHJZJ_ADT_2023241.Models.csproj": {
+              "projectPath": "/Users/jaka/Projects/HLHJZJ_ADT_2023241/HLHJZJ_ADT_2023241.Models/HLHJZJ_ADT_2023241.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -59,7 +82,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
       }
     }
   }

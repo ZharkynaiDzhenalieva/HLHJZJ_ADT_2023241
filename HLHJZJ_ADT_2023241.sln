@@ -19,6 +19,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{4F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{1C8A390B-5E15-4F23-9BB1-325AA1B86042}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLHJZJ_ADT_2023241.Endpoint", "HLHJZJ_ADT_2023241.Endpoint\HLHJZJ_ADT_2023241.Endpoint.csproj", "{B7DD3AE6-D280-48CC-9F69-6BE73D930E68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Others", "Others", "{8D7ABEF8-615D-4320-932F-7AF0C7C60963}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +52,10 @@ Global
 		{3B419482-B6CE-46D6-8DCF-D8C10E2B77F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B419482-B6CE-46D6-8DCF-D8C10E2B77F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B419482-B6CE-46D6-8DCF-D8C10E2B77F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7DD3AE6-D280-48CC-9F69-6BE73D930E68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7DD3AE6-D280-48CC-9F69-6BE73D930E68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7DD3AE6-D280-48CC-9F69-6BE73D930E68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7DD3AE6-D280-48CC-9F69-6BE73D930E68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,5 +69,10 @@ Global
 		{21C4B397-3D04-41F4-822E-37BDD5DC292D} = {1C8A390B-5E15-4F23-9BB1-325AA1B86042}
 		{CDB2047A-07CD-49CE-A248-C2DD9C5F43E0} = {49CFBD13-A82A-4F45-9887-9DF9FFEB923D}
 		{3B419482-B6CE-46D6-8DCF-D8C10E2B77F4} = {49CFBD13-A82A-4F45-9887-9DF9FFEB923D}
+		{B7DD3AE6-D280-48CC-9F69-6BE73D930E68} = {49CFBD13-A82A-4F45-9887-9DF9FFEB923D}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.StandardHeader = $1
 	EndGlobalSection
 EndGlobal
