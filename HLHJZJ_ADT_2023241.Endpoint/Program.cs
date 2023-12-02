@@ -1,15 +1,19 @@
-﻿namespace HLHJZJ_ADT_2023241.Endpoint;
+﻿using Microsoft.AspNetCore.Hosting;
+
+namespace HLHJZJ_ADT_2023241.Endpoint;
 
 public class Program
 {
     public static void Main(string[] args)
     {
-        var builder = WebApplication.CreateBuilder(args);
-        var app = builder.Build();
-
-        app.MapGet("/", () => "Hello World!");
-
-        app.Run();
+        CreateHostBuilder(args).Build().Run();
     }
+
+    public static IHostBuilder CreateHostBuilder(string[] args) =>
+        Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<StartUp>();
+            });
 }
 
