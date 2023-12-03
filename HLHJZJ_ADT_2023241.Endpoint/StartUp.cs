@@ -19,8 +19,11 @@ namespace HLHJZJ_ADT_2023241.Endpoint
             services.AddSingleton<LegoDBContext>();
 
             services.AddTransient<IRepository<Topic>, TopicRepository>();
-            
+            services.AddTransient<IRepository<Product>, ProductRepository>();
+
+
             services.AddTransient<ITopicLogic, TopicLogic>();
+            services.AddTransient<IProductLogic, ProductLogic>();
             
 
 
