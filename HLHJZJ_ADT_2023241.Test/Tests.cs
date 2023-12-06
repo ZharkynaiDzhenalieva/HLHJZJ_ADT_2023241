@@ -72,7 +72,7 @@ namespace HLHJZJ_ADT_2023241.Test
         {
             Assert.That(productLogic.Read(1).VendorCode, Is.EqualTo("ghbdtn112"));
         }
-
+         
         [Test]
         public void GetAllProducts_ReturnsExactNumberOfInstances()
         {
@@ -116,8 +116,6 @@ namespace HLHJZJ_ADT_2023241.Test
             product2.Interest = interest2;
             product3.Interest = interest3;
             product4.Interest = interest4;
-
-            // -------------------------------------------------------------------------------------------------------
 
             product1.Interest_id = interest1.Id; interest1.Products.Add(product1);
             product2.Interest_id = interest2.Id; interest2.Products.Add(product2);
