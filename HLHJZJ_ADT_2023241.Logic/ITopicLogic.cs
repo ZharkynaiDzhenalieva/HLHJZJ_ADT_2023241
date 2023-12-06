@@ -1,9 +1,8 @@
-﻿using System;
-using HLHJZJ_ADT_2023241.Models;
+﻿using HLHJZJ_ADT_2023241.Models;
 
 namespace HLHJZJ_ADT_2023241.Logic
 {
-	public interface ITopicLogic
+    public interface ITopicLogic
 	{
         void Create(Topic obj);
         Topic Read(int id);

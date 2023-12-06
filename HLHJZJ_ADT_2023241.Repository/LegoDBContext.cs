@@ -1,11 +1,9 @@
-﻿using System;
-using System.Reflection.Emit;
-using HLHJZJ_ADT_2023241.Models;
+﻿using HLHJZJ_ADT_2023241.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace HLHJZJ_ADT_2023241.Repository
 {
-	public class LegoDBContext : DbContext
+    public class LegoDBContext : DbContext
 	{
         public virtual DbSet<Topic> Topics { get; set; }
 
