@@ -1,5 +1,4 @@
-﻿using System;
-using HLHJZJ_ADT_2023241.Models;
+﻿using HLHJZJ_ADT_2023241.Models;
 
 namespace HLHJZJ_ADT_2023241.Repository
 {

@@ -1,5 +1,4 @@
-﻿using System;
-namespace HLHJZJ_ADT_2023241.Repository
+﻿namespace HLHJZJ_ADT_2023241.Repository
 {
     public abstract class Repository<T> : IRepository<T> where T : class
     {
