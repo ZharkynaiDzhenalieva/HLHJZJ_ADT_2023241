@@ -86,12 +86,9 @@ namespace HLHJZJ_ADT_2023241.Test
             Topic Topic3 = new Topic() { Id = 3, Name = "Avatar" };
             Topic Topic4 = new Topic() { Id = 4, Name = "Harry Potter" };
 
-
             Topic1.Products = new List<Product>();
             Topic2.Products = new List<Product>();
             Topic3.Products = new List<Product>();
-
-            // -------------------------------------------------------------------------------------------------------
 
             Product product1 = new Product() { Id = 1, VendorCode = "ghbdtn112", Cost = 44, Topic_id = 1, Interest_id = 1 };
             Product product2 = new Product() { Id = 2, VendorCode = "hlh223gjk", Cost = 30, Topic_id = 2, Interest_id = 2 };
