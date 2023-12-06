@@ -11,4 +11,8 @@
     <ProjectReference Include="..\HLHJZJ_ADT_2023241.Models\HLHJZJ_ADT_2023241.Models.csproj" />
     <ProjectReference Include="..\HLHJZJ_ADT_2023241.Repository\HLHJZJ_ADT_2023241.Repository.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.20.70" />
+    <PackageReference Include="NUnit" Version="4.0.1" />
+  </ItemGroup>
 </Project>

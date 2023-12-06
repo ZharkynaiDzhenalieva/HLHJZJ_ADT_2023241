@@ -2,7 +2,7 @@
 using HLHJZJ_ADT_2023241.Client;
 using HLHJZJ_ADT_2023241.Models;
 
-namespace HXINTL_HFT_2022232.Client
+namespace HLHJZJ_ADT_2023241.Client
 {
     class Program
     {
@@ -42,12 +42,12 @@ namespace HXINTL_HFT_2022232.Client
             menu.Show();
         }
 
-        private static void PreMenu(Action RentMotor, Action Motor, Action Brand)
+        private static void PreMenu(Action Interest, Action Product, Action Topic)
         {
             var menu = new ConsoleMenu()
-                .Add("RentMotor", RentMotor)
-                .Add("Motor", Motor)
-                .Add("Brand", Brand)
+                .Add("Interest", Interest)
+                .Add("Product", Product)
+                .Add("Topic", Topic)
                 .Add("Exit", ConsoleMenu.Close);
             menu.Show();
         }
@@ -63,7 +63,6 @@ namespace HXINTL_HFT_2022232.Client
         {
             Console.WriteLine("Topic: ");
             string name = Console.ReadLine();
-            Console.WriteLine("Age:");
             rserv.Post<Topic>(new Topic() { Name = name, }, "Topic");
         }
 
