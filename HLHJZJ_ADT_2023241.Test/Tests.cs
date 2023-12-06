@@ -22,20 +22,20 @@ namespace HLHJZJ_ADT_2023241.Test
         [SetUp]
         public void Setup()
         {
+            List<Interest> Interests = new List<Interest>();
+            List<Topic> Topics = new List<Topic>();
+            List<Product> Products = new List<Product>();
+
+            FakeData(out Interests, out Topics, out Products);
             Mock<IRepository<Interest>> mockInterestRepo = new Mock<IRepository<Interest>>();
             Mock<IRepository<Product>> mockProductRepo = new Mock<IRepository<Product>>();
             Mock<IRepository<Topic>> mockTopicRepo = new Mock<IRepository<Topic>>();
 
-            mockInterestRepo.Setup(x => x.Read(It.IsAny<int>())).Returns(
-                new Interest()
-                {
-                    Id = 1,
-                    Name = "The Lord of The Rings",
-                });
+            
 
-            mockInterestRepo.Setup(x => x.ReadAll()).Returns(FakeInterestObject);
-            mockProductRepo.Setup(x => x.ReadAll()).Returns(FakeInterestObject);
-            mockTopicRepo.Setup(x => x.ReadAll()).Returns(FakeInterestObject);
+            mockInterestRepo.Setup(x => x.ReadAll()).Returns(Interests.AsQueryable);
+            mockProductRepo.Setup(x => x.ReadAll()).Returns(Products.AsQueryable);
+            mockTopicRepo.Setup(x => x.ReadAll()).Returns(Topics.AsQueryable);
 
             interestLogic = new InterestLogic(mockInterestRepo.Object);
             topicLogic = new TopicLogic(mockTopicRepo.Object);
@@ -47,17 +47,39 @@ namespace HLHJZJ_ADT_2023241.Test
         [Test]
         public void GetOneInterestName()
         {
-            Assert.That(interestLogic.Read(1).Name, Is.EqualTo("The Lord of The Rings"));
+            Assert.That(interestLogic.Read(1).Name, Is.EqualTo("Cars"));
         }
 
         [Test]
         public void GetAllInterest_ReturnsExactNumberOfInstances()
         {
-            Assert.That(this.interestLogic.ReadAll().Count, Is.EqualTo(1));
+            Assert.That(this.interestLogic.ReadAll().Count, Is.EqualTo(4));
+        }
+        [Test]
+        public void GetOneTopicName()
+        {
+            Assert.That(topicLogic.Read(1).Name, Is.EqualTo("Minions"));
         }
 
+        [Test]
+        public void GetAllTopics_ReturnsExactNumberOfInstances()
+        {
+            Assert.That(this.topicLogic.ReadAll().Count, Is.EqualTo(4));
+        }
 
-        private IQueryable<Interest> FakeInterestObject()
+        [Test]
+        public void GetOneProductVendorCode()
+        {
+            Assert.That(productLogic.Read(1).VendorCode, Is.EqualTo("ghbdtn112"));
+        }
+
+        [Test]
+        public void GetAllProducts_ReturnsExactNumberOfInstances()
+        {
+            Assert.That(this.productLogic.ReadAll().Count, Is.EqualTo(4));
+        }
+
+        private static void FakeData(out List<Interest> Interests, out List<Topic> Topics, out List<Product> Products)
         {
             Topic Topic1 = new Topic() { Id = 1, Name = "Minions" };
             Topic Topic2 = new Topic() { Id = 2, Name = "Marvel" };
@@ -90,7 +112,6 @@ namespace HLHJZJ_ADT_2023241.Test
             Interest interest4 = new Interest() { Id = 2, Name = "For children" };
             Interest interest2 = new Interest() { Id = 3, Name = "Art" };
             Interest interest3 = new Interest() { Id = 4, Name = "Ships" };
-
             product1.Interest = interest1;
             product2.Interest = interest2;
             product3.Interest = interest3;
@@ -103,16 +124,24 @@ namespace HLHJZJ_ADT_2023241.Test
             product3.Interest_id = interest3.Id; interest3.Products.Add(product3);
             product4.Interest_id = interest4.Id; interest4.Products.Add(product4);
 
-            // -------------------------------------------------------------------------------------------------------
+            Interests = new List<Interest>();
+            Interests.Add(interest1);
+            Interests.Add(interest2);
+            Interests.Add(interest3);
+            Interests.Add(interest4);
 
-            List<Interest> Interest = new List<Interest>();
-            Interest.Add(interest1);
-            Interest.Add(interest2);
-            Interest.Add(interest3);
-            Interest.Add(interest4);
+            Topics = new List<Topic>();
+            Topics.Add(Topic1);
+            Topics.Add(Topic2);
+            Topics.Add(Topic3);
+            Topics.Add(Topic4);
 
-            return Interest.AsQueryable();
+            Products = new List<Product>();
+            Products.Add(product1);
+            Products.Add(product2);
+            Products.Add(product3);
+            Products.Add(product4);
+
         }
-
     }
 }
