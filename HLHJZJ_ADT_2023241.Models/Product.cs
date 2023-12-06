@@ -21,6 +21,12 @@ namespace HLHJZJ_ADT_2023241.Models
         [ForeignKey(nameof(Topic))]
         public int Topic_id { get; set; }
 
+        [NotMapped]
+        [JsonIgnore]
+        public virtual Interest? Interest { get; set; }
+        [ForeignKey(nameof(Interest))]
+        public int Interest_id { get; set; }
+
         public Product()
 		{
 		}
