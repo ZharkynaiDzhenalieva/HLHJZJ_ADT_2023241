@@ -7,37 +7,37 @@ namespace HLHJZJ_ADT_2023241.Endpoint
 {
     [Route("[controller]")]
     [ApiController]
-    public class TopicController : ControllerBase
-	{
-        ITopicLogic logic;
+    public class InterestController : ControllerBase
+    {
+        IInterestLogic logic;
 
-        public TopicController(ITopicLogic logic)
+        public InterestController(IInterestLogic logic)
         {
             this.logic = logic;
         }
 
         // GET: api/<TopicController>
-        //returns the list of Topic
+        //returns the list of Interests
         [HttpGet]
-        public IEnumerable<Topic> Get()
+        public IEnumerable<Interest> Get()
         {
-            return logic.ReadAll(); 
+            return logic.ReadAll();
         }
-        //returns exact Topic via id
+        //returns exact Interest via id
         [HttpGet("{id}")]
-        public Topic Get(int id)
+        public Interest Get(int id)
         {
             return logic.Read(id);
         }
-        //creates new topic
+        //creates new interest
         [HttpPost]
-        public void Post([FromBody] Topic value)
+        public void Post([FromBody] Interest value)
         {
             logic.Create(value);
         }
 
         [HttpPut]
-        public void Put([FromBody] Topic value)
+        public void Put([FromBody] Interest value)
         {
             logic.Update(value);
         }
@@ -45,7 +45,7 @@ namespace HLHJZJ_ADT_2023241.Endpoint
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            var TopicToDelete = this.logic.Read(id);
+            var InterestToDelete = this.logic.Read(id);
             logic.Delete(id);
         }
     }

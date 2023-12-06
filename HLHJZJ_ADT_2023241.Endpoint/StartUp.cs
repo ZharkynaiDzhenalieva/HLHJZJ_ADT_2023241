@@ -20,10 +20,12 @@ namespace HLHJZJ_ADT_2023241.Endpoint
 
             services.AddTransient<IRepository<Topic>, TopicRepository>();
             services.AddTransient<IRepository<Product>, ProductRepository>();
+            services.AddTransient<IRepository<Interest>, InterestRepository>();
 
 
             services.AddTransient<ITopicLogic, TopicLogic>();
             services.AddTransient<IProductLogic, ProductLogic>();
+            services.AddTransient<IInterestLogic, InterestLogic>();
             
 
 
